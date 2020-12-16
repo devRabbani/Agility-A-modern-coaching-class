@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="pagepiling">
+        <div class="section s1">
+            <div class="nav">
+                <div class="wrapper navallign">
+                    <a href="#" class="logo">Agility</a>
+                    <div class="list">
+                        <ul id="myMenu">
+                            <li><a href="#thirdPage">About</a></li>
+                            <li data-menuanchor="secondPage"><a href="#secondPage">Vision</a></li>
+                            <li data-menuanchor="thirdPage"><a href="#thirdPage">Contact</a></li>
+                            <li data-menuanchor="fourthPage"><a href="#fourthPage">Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                   
+            </div>
+            <div class="st">
+                <div class="left">
+                    <h3>Agility Coaching <br>Classes</h3>
+                    <p>Boost your study to the next level with us, Your Future is our future.</p>
+                    <a class=btn-contact href="#">Contact Us</a>
+                </div>
+                <div class="image">
+                    <img src="./img/online_lesson_ (2).svg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="section s2">
+            <h1>About Us</h1>
+            <div class="about">
+                <div class="image">
+                    <img src="./img/undraw_team_spirit_hrr4.svg" alt="">
+                </div>
+                <div class="para">
+                    <p>
+                        It has been observed that the students from our area are good enough with theoratical knowledge
+                        but they fail to apply those knowledge in numerical approach and practical problems. So we aim
+                        to encourage all the students to develop a sense of practical mind to enable them to reach and
+                        expand their true potential.It has been observed that the students from our area are good enough
+                        with theoratical knowledge but they fail to apply those
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section s3">
+            <div class="mission">
+                <h1>Mission</h1>
+                <div class="about">
+                    <div class="para">
+                        <p>
+                            It has been observed that the students from our area are good enough with theoratical
+                            knowledge but they fail to apply those knowledge in numerical approach and practical
+                            problems. So we aim to encourage all the students to develop a sense of practical mind to
+                            enable them to reach and expand their true potential.It has been observed that the students
+                            from our area are good enough with theoratical knowledge but they fail to apply those
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="./img/undraw_task_31wc.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section s4">
+            <h1>Contact Us</h1>
+            <div class="about">
+                <div data-aos="zoom-in-down" class="image">
+                    <img src="./img/undraw_Profile_data_re_v81r.svg" alt="">
+                </div>
+                <div class="para">
+                    <p>
+                        It has been observed that the students from our area are good enough with theoratical knowledge
+                        but they fail to apply those knowledge in numerical approach and practical problems. So we aim
+                        to encourage all the students to develop a sense of practical mind to enable them to reach and
+                        expand their true potential.It has been observed that the students from our area are good enough
+                        with theoratical knowledge but they fail to apply those
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"
+        integrity="sha512-FcXc9c211aHVJEHxoj2fNFeT8+wUESf/4mUDIR7c31ccLF3Y6m+n+Wsoq4dp2sCnEEDVmjhuXX6TfYNJO6AG6A=="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#pagepiling').pagepiling({
+                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+                touchSensitivity: 10,
+                scrollingSpeed: 500,
+                menu: '#myMenu'
+            });
+
+        });
+    </script>
+</body>
+
+</html>
