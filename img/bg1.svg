@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="120.628 193.063 287.467 326.097" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="Path_54" x="10.45" y="9.753" width="970.148" height="1097.846" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#06032e" flood-opacity="0.71"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.012" y2="1.166" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8348ef"/>
+      <stop offset="1" stop-color="#c84ccd"/>
+    </linearGradient>
+    <filter id="Path_55" x="0" y="0" width="557.903" height="508.759" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur-2"/>
+      <feFlood flood-color="#110463" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="-0.302" y2="0.647" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7032e2"/>
+      <stop offset="1" stop-color="#7622d3"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_3" data-name="Group 3" transform="matrix(0.301914, 0, 0, 0.301914, 120.628649, 193.06261)" style="">
+    <g transform="matrix(1, 0, 0, 1, -16.45, -15.5)" filter="url(#Path_54)">
+      <path id="Path_54-2" data-name="Path 54" d="M1877.783.253c77.04,69.741,52.9,230.615-71.4,297.1s-273.038,137.169-231.121,362.654c27.106,78.94,56.371,186.024,0,285.613S1406.146,1080.1,1406.146,1080.1H969.687L970.7.253Z" transform="translate(-953.24 15.5)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -16.45, -15.5)" filter="url(#Path_55)">
+      <path id="Path_55-2" data-name="Path 55" d="M1918.784,0s-1.1,170.49-124.305,200.912c-124.306,28.908-128.642-46.253-224.039-23.127s-170.559,291.973-170.559,291.973V0Z" transform="translate(-1380.38 15.5)" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

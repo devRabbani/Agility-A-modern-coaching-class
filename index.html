@@ -2,116 +2,270 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css"
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel=preload as="style" type=text/css href=css/style.css> <link
+    href=https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css rel=stylesheet>
+  <link rel="stylesheet" href="css/glider.min.css">
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Document</title>
 </head>
 
 <body>
-    <div id="pagepiling">
-        <div class="section s1">
-            <div class="nav">
-                <div class="wrapper navallign">
-                    <a href="#" class="logo">Agility</a>
-                    <div class="list">
-                        <ul id="myMenu">
-                            <li><a href="#thirdPage">About</a></li>
-                            <li data-menuanchor="secondPage"><a href="#secondPage">Vision</a></li>
-                            <li data-menuanchor="thirdPage"><a href="#thirdPage">Contact</a></li>
-                            <li data-menuanchor="fourthPage"><a href="#fourthPage">Team</a></li>
-                        </ul>
-                    </div>
-                </div>
-                   
-            </div>
-            <div class="st">
-                <div class="left">
-                    <h3>Agility Coaching <br>Classes</h3>
-                    <p>Boost your study to the next level with us, Your Future is our future.</p>
-                    <a class=btn-contact href="#">Contact Us</a>
-                </div>
-                <div class="image">
-                    <img src="./img/online_lesson_ (2).svg" alt="">
-                </div>
-            </div>
-
+  <section class="s1">
+    <div class="nav">
+      <div class="wrapper navallign">
+        <a href="#" class="logo">Agility</a>
+        <div class="list">
+          <ul id="myMenu">
+            <li><a href="#thirdPage">About</a></li>
+            <li data-menuanchor="secondPage">
+              <a href="#secondPage">Vision</a>
+            </li>
+            <li data-menuanchor="thirdPage">
+              <a href="#thirdPage">Contact</a>
+            </li>
+            <li data-menuanchor="fourthPage">
+              <a href="#fourthPage">Team</a>
+            </li>
+          </ul>
         </div>
-        <div class="section s2">
-            <h1>About Us</h1>
-            <div class="about">
-                <div class="image">
-                    <img src="./img/undraw_team_spirit_hrr4.svg" alt="">
-                </div>
-                <div class="para">
-                    <p>
-                        It has been observed that the students from our area are good enough with theoratical knowledge
-                        but they fail to apply those knowledge in numerical approach and practical problems. So we aim
-                        to encourage all the students to develop a sense of practical mind to enable them to reach and
-                        expand their true potential.It has been observed that the students from our area are good enough
-                        with theoratical knowledge but they fail to apply those
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="section s3">
-            <div class="mission">
-                <h1>Mission</h1>
-                <div class="about">
-                    <div class="para">
-                        <p>
-                            It has been observed that the students from our area are good enough with theoratical
-                            knowledge but they fail to apply those knowledge in numerical approach and practical
-                            problems. So we aim to encourage all the students to develop a sense of practical mind to
-                            enable them to reach and expand their true potential.It has been observed that the students
-                            from our area are good enough with theoratical knowledge but they fail to apply those
-                        </p>
-                    </div>
-                    <div class="image">
-                        <img src="./img/undraw_task_31wc.svg" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="section s4">
-            <h1>Contact Us</h1>
-            <div class="about">
-                <div data-aos="zoom-in-down" class="image">
-                    <img src="./img/undraw_Profile_data_re_v81r.svg" alt="">
-                </div>
-                <div class="para">
-                    <p>
-                        It has been observed that the students from our area are good enough with theoratical knowledge
-                        but they fail to apply those knowledge in numerical approach and practical problems. So we aim
-                        to encourage all the students to develop a sense of practical mind to enable them to reach and
-                        expand their true potential.It has been observed that the students from our area are good enough
-                        with theoratical knowledge but they fail to apply those
-                    </p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"
-        integrity="sha512-FcXc9c211aHVJEHxoj2fNFeT8+wUESf/4mUDIR7c31ccLF3Y6m+n+Wsoq4dp2sCnEEDVmjhuXX6TfYNJO6AG6A=="
-        crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            $('#pagepiling').pagepiling({
-                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-                touchSensitivity: 10,
-                scrollingSpeed: 500,
-                menu: '#myMenu'
-            });
+    <div class="st wrapper">
+      <div class="left">
+        <h3>Agility Coaching <br />Classes</h3>
+        <p>
+          Boost your study to the next level with us, Your Future is our
+          future.
+        </p>
+        <a class="btn-contact" href="#">Contact Us</a>
+      </div>
+      <div class="image">
+        <img src="./img/online_lesson_ (2).svg" alt="" />
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="wrapper">
+      <h2 class="center">Features</h2>
+      <div class="section">
+        <ul>
+          <li>
+            <img src="img/startup_isometric.svg" alt="photo" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+              reiciendis asperiores rem quam
+            </p>
+          </li>
+          <li>
+            <img src="img/team_work (1).svg" alt="photo" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+              reiciendis asperiores rem quam
+            </p>
+          </li>
+          <li>
+            <img src="img/undraw_exams_g4ow.svg" alt="photo" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+              reiciendis asperiores rem quam
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="wrapper">
+      <div class="aboutContent">
+        <div class="aboutLeft">
+          <img src="img/undraw_team_spirit_hrr4.svg" alt="" />
+        </div>
+        <div class="aboutPara">
+          <h2>About Us</h2>
+          <p class="contPara">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+            quis totam culpa, maiores cum consequuntur delectus repudiandae
+            aspernatur laborum, dolore nobis eveniet et autem dicta nemo.
+            Exercitationem quos sapiente et?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="vision">
+    <div class="wrapper">
+      <div class="visionContent">
+        <div class="visionLeft">
+          <h2 class="center">Our Vision</h2>
+          <p class="contPara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Temporibus recusandae enim culpa consequatur reprehenderit ex
+            soluta repellat minima exercitationem facilis, placeat distinctio
+            non quae quas ducimus sequi dolores provident iure.
+          </p>
+        </div>
+        <div class="visionRight">
+          <img src="img/online_lesson_.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="staffSection">
+    <div class="wrapper">
+      <div class="staffContent">
+        <h2 class="center">Staffs</h2>
+        <div class="staffArea">
+          <div class="staff">
+            <div class="projectimg"> <img src="img/mehdee.jpg" alt="Snewz Site">
+              <h3 class="center staffName">Mehdee Rahman</h3>
+              <p class="center staffSub">Physics</p>
+              <div class="center showbar">HOVER</div>
+            </div>
+            <div class="projectdes">
+              <div class="projectFlex">
+                <div> <a rel=noreferrer class=facebook target=_blank href=https://www.facebook.com/StrikerOne65> <i
+                    class=ion-logo-facebook></i> </a></div>
+                <div> <a rel=noreferrer class=twitter target=_blank href=https://twitter.com/Iamrrk__> <i
+                    class=ion-logo-twitter></i> </a>
+                </div>
+                <div> <a rel=noreferrer class=linkedin target=_blank href=https://www.linkedin.com/in/strikerone65> <i
+                    class=ion-logo-linkedin></i> </a></div>
+                <div> <a rel=noreferrer class=instagram target=_blank href=https://www.instagram.com/iamrrk__> <i
+                    class=ion-logo-instagram></i> </a></div>
+                <div> <a rel=noreferrer class=github target=_blank href=https://github.com/StrikerOne65> <i
+                    class=ion-logo-github></i> </a>
+                </div>
+              </div>
+              <p class="center staffEdu">B.E In Mechanical Engineering From<br>Jorhat Engineering College, Assam</p>
+            </div>
+          </div>
+          <div class="staff">
+            <div class="projectimg"> <img src="img/mehdee.jpg" alt="Snewz Site">
+              <h3 class="center staffName">Habib Masum</h3>
+              <p class="center staffSub">MATHEMATICS</p>
+              <div class="center showbar">HOVER</div>
+            </div>
+            <div class="projectdes">
+              <div class="projectFlex">
+                <div> <a rel=noreferrer class=facebook target=_blank href=https://www.facebook.com/StrikerOne65> <i
+                    class=ion-logo-facebook></i> </a></div>
+                <div> <a rel=noreferrer class=twitter target=_blank href=https://twitter.com/Iamrrk__> <i
+                    class=ion-logo-twitter></i> </a>
+                </div>
+                <div> <a rel=noreferrer class=instagram target=_blank href=https://www.instagram.com/iamrrk__> <i
+                    class=ion-logo-instagram></i> </a></div>
+                <div> <a rel=noreferrer class=github target=_blank href=https://github.com/StrikerOne65> <i
+                    class=ion-logo-github></i> </a>
+                </div>
+              </div>
+              <p class="center staffEdu">B.E In Mechanical Engineering From<br>Jorhat Engineering College, Assam</p>
+            </div>
+          </div>
+        </div>
 
-        });
-    </script>
+      </div>
+    </div>
+  </section>
+  <section class="carousal">
+    <div class="carcon">
+      <div class="glider-contain">
+        <div class="glider">
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vel earum pariatur temporibus! Dolor
+              molestias a, recusandae cum sapiente fugit tempora possimus consequatur vitae illum enim obcaecati et id
+              animi.</p>
+          </div>
+          <div>your content here</div>
+          <div>your content here</div>
+          <div>your content here</div>
+        </div>
+
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
+      </div>
+    </div>
+
+  </section>
+  <section class="contact">
+    <div class="wrapper">
+      <h2 class="center">Contact</h2>
+      <div class="contactWrapper">
+        <div class="leftSide flexDiv">
+         
+            <div class="inner">
+              <form action="">
+                <label class="form-group">
+                  <input type="text" class="form-control"  required>
+                  <span>Your Name</span>
+                  <span class="border"></span>
+                </label>
+                <label class="form-group">
+                  <input type="text" class="form-control"  required>
+                  <span for="">Your Mail</span>
+                  <span class="border"></span>
+                </label>
+                <label class="form-group" >
+                  <textarea name="" id="" class="form-control" required></textarea>
+                  <span for="">Your Message</span>
+                  <span class="border"></span>
+                </label>
+                <button>Submit 
+                  <i class="zmdi zmdi-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        <div class="rightSide flexDiv">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus possimus non
+          dolores voluptatum quibusdam fugiat voluptates iste laboriosam velit commodi exercitationem, saepe distinctio
+          maxime adipisci suscipit. Nihil, placeat magni?
+          <div class="projectFlex">
+            <div> <a rel=noreferrer class=facebook target=_blank href=https://www.facebook.com/StrikerOne65> <i
+                class=ion-logo-facebook></i> </a></div>
+            <div> <a rel=noreferrer class=twitter target=_blank href=https://twitter.com/Iamrrk__> <i
+                class=ion-logo-twitter></i> </a>
+            </div>
+            <div> <a rel=noreferrer class=linkedin target=_blank href=https://www.linkedin.com/in/strikerone65> <i
+                class=ion-logo-linkedin></i> </a></div>
+            <div> <a rel=noreferrer class=instagram target=_blank href=https://www.instagram.com/iamrrk__> <i
+                class=ion-logo-instagram></i> </a></div>
+            <div> <a rel=noreferrer class=github target=_blank href=https://github.com/StrikerOne65> <i
+                class=ion-logo-github></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrapper footer">
+      <div>
+        <p>Copyright &copy; 2021 by Agility Coaching. All rights are reserved</p>
+      </div>
+      <div> <a href="https://www.privacypolicytemplate.net/live.php?token=kjGD3UQtV4sFhvQ8iizS66EYcfdKaaMS">Privacy
+          Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+          href=https://www.termsfeed.com/terms-service/22332157cae9c1ab0d968ac4b3ab5d62>Terms of Use</a> </div> </div>
+          </footer> 
+          <div class=row>
+          <p class=production><strong>&#9679; A GOLAM RABBANI PRODUCTION &#9679;</strong></p>
+      </div>
+  <script src="js/glider.min.js"></script>
+  <script>
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      dots: '#dots',
+      draggable: true,
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      }
+    });
+  </script>
 </body>
 
 </html>
