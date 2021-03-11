@@ -17,6 +17,7 @@ body {
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 h1 {
@@ -49,11 +50,11 @@ img {
 .left p {
   width: 60%;
   font-size: 1.2rem;
-  margin-bottom: 40px;
 }
 
 .left {
   width: 40%;
+  z-index: 3;
 }
 
 .st {
@@ -101,14 +102,27 @@ img {
 }
 
 .btn-contact {
+  display: inline-block;
   padding: 12px 30px;
   border-radius: 10px;
-  background-color: blueviolet;
-  color: white;
+  background-color: #00f;
+  color: rgb(240, 240, 240);
   font-size: 1.3rem;
   margin-top: 10px;
-  box-shadow: 4px 4px 8px #1e0125e3;
+  transition: all 0.2s,background .5s;
+  box-shadow: 2px 2px 5px #00000070;
 }
+
+.btn-contact:hover {
+  background-color: rgb(118, 0, 214);
+  box-shadow: 5px 5px 8px #0000009e;
+}
+
+.btn-contact:active {
+  transform: translateY(4px);
+  box-shadow: 2px 2px 8px #00000070;
+}
+
 
 .image {
   z-index: 2;
@@ -690,3 +704,30 @@ footer a {
   letter-spacing: 5px;
   font-size: 0.9rem
 }
+
+.btn-mission{
+  display: inline-block;
+  margin-left: 15px;
+  padding: 9px 25px;
+  border-radius:50px;
+  color: #d0cfd8;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  border: 4px solid blue;
+  transition: all 0.2s,background .5s,border .5s;
+}
+
+.btn-mission:hover{
+  background-color: rgb(118, 0, 214);
+  border: 4px solid rgb(212, 0, 255);
+  box-shadow: 1px 3px 8px #00000057;
+  color: #ebebeb;
+}
+
+.btn-mission:active{
+  transform: translateY(4px);
+  background-color: rgb(118, 0, 214);
+  box-shadow: none
+}
+
+
