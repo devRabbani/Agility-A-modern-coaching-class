@@ -275,7 +275,14 @@ h2::after {
 
 .staffSection {
   background-color: rgb(184, 180, 180);
-  padding: 50px 10px;
+  padding: 75px 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.staffBack{
+  background-color: rgb(122, 122, 122);
+  padding: 5%;
 }
 
 
