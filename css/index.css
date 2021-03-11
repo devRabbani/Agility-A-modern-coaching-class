@@ -224,13 +224,13 @@ h2::after {
 .visionContent {
   display: flex;
   align-items: center;
-  padding: 130px 0px 130px 60px;
+  padding: 100px 0px 100px 60px;
   background-color: cornsilk;
   position: relative;
 }
 
 .vision {
-  padding: 50px 10px;
+  padding: 70px 10px;
   position: relative;
   width: 72%;
   margin: 0 auto;
@@ -305,13 +305,12 @@ h2::after {
 .staff {
   margin: 30px 20px 60px;
   padding: 20px 15px;
-  /* height: 167px; */
-  height: 182px;
+  height: 143px;
   display: flex;
   flex-direction: column;
   transition: .3s ease-in-out;
-  flex-basis: 16%;
-  min-width: 260px;
+  flex-basis: 14%;
+  min-width: 220px;
   background-color: #fff;
   box-shadow: 3px 4px 15px 0px #1b1b1cbf;
   border: 1px solid rgb(9, 3, 104);
@@ -321,7 +320,7 @@ h2::after {
 }
 
 .staff:hover {
-  height: 340px
+  height: 305px
 }
 
 .projectdes {
@@ -342,11 +341,11 @@ h2::after {
 
 .staff img {
   max-width: 100%;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   position: relative;
-  left: 32px;
-  border: 8px solid rgb(238 236 239);
+  left: 30px;
+  border: 6px solid rgb(238 236 239);
   background-color: white;
   border-radius: 50%;
   box-shadow: 0 5px 6px #0000006e
@@ -361,7 +360,7 @@ h2::after {
 .showbar {
   background-color: #00f;
   color: #fff;
-  width: 104.9%;
+  width: 232px;
   left: -16px;
   top: -7px;
   z-index: 6;
@@ -378,13 +377,13 @@ h2::after {
 
 
 .staffName {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-top: 11px;
   opacity: 0.7;
 }
 
 .staffSub {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 6px;
   opacity: 0.7;
@@ -439,7 +438,7 @@ h2::after {
 
 
 .staffEdu {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   line-height: 25px;
   word-spacing: 3px;
