@@ -179,9 +179,12 @@ img {
 
 .features ul li {
   flex-basis: 200px;
+  cursor: pointer;
   text-align: center;
   box-shadow: 2px 3px 10px 0px #8d8686db;
   padding: 2%;
+  transition: all 0.4s;
+  border: 1px solid white;
 }
 
 .features {
@@ -206,7 +209,7 @@ h2::after {
 }
 
 .about {
-  background-color: #5100ff;
+  background-color: #722ADD;
   padding: 50px 10px;
 }
 
@@ -738,4 +741,17 @@ footer a {
   box-shadow: none
 }
 
+.logo img{
+  width: 160px;
+}
 
+.features ul li:hover{
+ /* box-shadow:  1px 1px 10px 0px #c8c2c28f;
+ box-shadow: 1px 2px 5px 0px #bcb8b899; */
+ box-shadow: none;
+ border: 1px solid rgba(145, 143, 143, 0.425);
+}
+
+/* .aboutPara p , .aboutPara h2{
+  color:rgb(218, 214, 214);
+} */
