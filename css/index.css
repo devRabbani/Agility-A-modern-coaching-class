@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
@@ -162,6 +166,7 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
+  transition: all 0.4s;
   color: rgb(212, 212, 212);
 }
 
@@ -185,11 +190,17 @@ img {
   padding: 2%;
   transition: all 0.4s;
   border: 1px solid white;
+  background-color: white;
+  z-index: 2;
 }
 
 .features {
   padding: 70px 0;
   background-color: white;
+  position: relative;
+    background-image: url(../img/pent.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
 
 h2 {
@@ -209,7 +220,7 @@ h2::after {
 }
 
 .about {
-  background-color: #722ADD;
+  background-color: #aa7af3;
   padding: 50px 10px;
 }
 
@@ -228,7 +239,7 @@ h2::after {
 
 .contPara {
   font-size: 1.3rem;
-  word-spacing: 2px;
+  word-spacing: 1.3px;
   line-height: 36px;
 }
 
@@ -276,7 +287,7 @@ h2::after {
   box-shadow: 1px 2px 10px rgb(58, 57, 57);
   position: absolute;
   top: 8%;
-  right: -15%;
+  right: -17%;
   background-color: cornsilk;
   border-radius: 50%;
   shape-outside: circle();
@@ -440,13 +451,6 @@ h2::after {
   transform: scale(1.2)
 }
 
-.projectdes .twitter i:active,
-.projectdes .twitter i:hover {
-  color: #55acee;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2)
-}
-
 .projectdes .linkedin i:active,
 .projectdes .linkedin i:hover {
   color: #0077b5;
@@ -454,9 +458,9 @@ h2::after {
   transform: scale(1.2)
 }
 
-.projectdes .github i:active,
-.projectdes .github i:hover {
-  color: #bd2c00;
+.projectdes .gmail i:active,
+.projectdes .gmail i:hover {
+  color: #ea4335;
   -webkit-transform: scale(1.2);
   transform: scale(1.2)
 }
@@ -479,9 +483,6 @@ h2::after {
 
 .carDiv {
   background-color: teal;
-  /* width: 70%;
-  text-align: center;
-  margin: 0 auto; */
 }
 
 .carDiv p {
@@ -499,9 +500,17 @@ h2::after {
 
 
 .contact {
-  background-color: white;
+  background-color: #A024DA;
+  padding-top: 2%;
+  position: relative;
+}
+.contact h2{
+  color: #dadada
 }
 
+.contact h2::after {
+  background-color: #4d077d;
+}
 
 .contactWrapper {
   display: flex;
@@ -524,7 +533,7 @@ h2::after {
 input,
 textarea,
 select{
-  color: #fff;
+  color: rgb(233, 230, 230);
   font-size: 15px;
 }
 
@@ -535,14 +544,12 @@ select{
 
 
 .inner {
-  background: #39459b;
-  border: 10px solid #0d99d7;
+  background:rgba(160, 36, 218, 0.96);
+ 
+  border: 10px solid #54077a;
   padding: 65px 65px 50px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); */
+  box-shadow:  5px 5px 10px rgb(86 84 84 / 81%);
 }
 
 textarea {
@@ -561,7 +568,7 @@ textarea {
 
 .form-group span {
   font-size: 15px;
-  color: #00ade6;
+  color:#fcf9f9;
   position: absolute;
   top: 11px;
   transition: all .2s ease;
@@ -583,7 +590,7 @@ textarea {
 
 .form-control {
   border: none;
-  border-bottom: 2px solid #00ade6;
+  border-bottom: 2px solid #3f015e;
   display: block;
   width: 100%;
   height: 43px;
@@ -612,12 +619,12 @@ textarea.form-control {
 }
 
 .contact button {
-  border: 2px solid #fff;
+  border: 2px solid #fcf9f9;
   margin-top: -40px;
   cursor: pointer;
   padding: 13px 30px;
   background: none;
-  color: #fff;
+  color: #fcf9f9;
   text-transform: uppercase;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -648,7 +655,7 @@ textarea.form-control {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #2098D1;
+  background: #7906b3;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -721,7 +728,7 @@ footer a {
   margin-left: 15px;
   padding: 9px 25px;
   border-radius:50px;
-  color: #d0cfd8;
+  color: #dfdfdf;
   font-size: 1.3rem;
   margin-top: 10px;
   border: 4px solid blue;
@@ -746,12 +753,34 @@ footer a {
 }
 
 .features ul li:hover{
- /* box-shadow:  1px 1px 10px 0px #c8c2c28f;
- box-shadow: 1px 2px 5px 0px #bcb8b899; */
  box-shadow: none;
  border: 1px solid rgba(145, 143, 143, 0.425);
 }
 
-/* .aboutPara p , .aboutPara h2{
-  color:rgb(218, 214, 214);
-} */
+#myMenu li a:hover ,#myMenu li a:active{
+  color: rgb(0, 0, 0);
+}
+
+.contact::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  transform: scale(1.4);
+  position: absolute;
+  background-repeat: no-repeat;
+  top: -24%;
+  left:4%;
+  opacity: 0.6;
+  z-index: 1;
+  background-image: url(/img/contactUs.svg);
+}
+
+.leftSide{
+  z-index: 3;
+}
+.staffBack{
+  background-image: url(../img/staffbg.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
