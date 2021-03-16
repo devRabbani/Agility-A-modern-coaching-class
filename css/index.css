@@ -44,7 +44,7 @@ h1 {
 }
 
 .features img {
-  width: 100px;
+  width: 125px;
 }
 
 img {
@@ -103,7 +103,7 @@ img {
   position: absolute;
   bottom: -5px;
   left: -10px;
-  background-image: url(/img/untitled2.svg);
+  background-image: url(/img/hemicircle.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -188,6 +188,7 @@ img {
   text-align: center;
   box-shadow: 2px 3px 10px 0px #8d8686db;
   padding: 2%;
+  padding-bottom: 1%;
   transition: all 0.4s;
   border: 1px solid white;
   background-color: white;
@@ -198,10 +199,11 @@ img {
   padding: 70px 0;
   background-color: white;
   position: relative;
-    background-image: url(../img/pent.svg);
+    background-image: url(../img/pent.svg),url(../img/drawkit-notebook-man-monochrome.svg);;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom left,108% -30px;
 }
+
 
 h2 {
   text-align: center;
@@ -247,6 +249,7 @@ h2::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: mediumslateblue;
   box-shadow: 1px 2px 10px rgb(46, 45, 45);
   margin: 0 auto;
   padding: 50px;
@@ -271,7 +274,7 @@ h2::after {
 .vision::before {
   content: "";
   background-image: linear-gradient(rgb(0, 0, 0), rgba(14, 1, 1, 0.575)),
-    url(../img/pbg1.jpg);
+    url(../img/visionBg.jpg);
   opacity: 0.8;
   background-size: cover;
   width: 100vw;
@@ -283,7 +286,7 @@ h2::after {
 }
 
 .visionRight {
-  padding: 70px;
+  padding: 90px;
   box-shadow: 1px 2px 10px rgb(58, 57, 57);
   position: absolute;
   top: 8%;
@@ -299,8 +302,8 @@ h2::after {
 }
 
 .visionRight img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -311,18 +314,45 @@ h2::after {
   margin: 0 auto;
 }
 
+
+
 .staffBack{
-  background-color: rgb(248 247 226);
+  background-color: rgb(248,247,226);
   padding: 5%;
 }
 
 
 .staffContent {
-  /* box-shadow: inset 1px 2px 10px rgb(46, 45, 45); */
   box-shadow: inset 0 0 4px 5px rgb(0 0 0 / 71%);
   margin: 0 auto;
   padding: 40px 50px 60px;
   background-color: #edeaf999;
+  position: relative;
+}
+
+.staffContent::after {
+  content: "";
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 28%;
+  left: 74.6%;
+  opacity: 0.2;
+  z-index: 1;
+  background-image: url(../img/schoolbooks-monochrome.svg);
+}
+.staffContent::before {
+  content: "";
+  width: 350px;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 4%;
+  left: 1%;
+  opacity: 0.2;
+  z-index: 1;
+  background-image: url(../img/entryway-monochrome.svg);
 }
 
 .staffContent h2{
@@ -379,8 +409,8 @@ h2::after {
   width: 150px;
   height: 150px;
   position: relative;
-  left: 30px;
-  border: 6px solid rgb(238 236 239);
+  left: 33px;
+  border: 5px solid rgb(238 236 239);
   background-color: white;
   border-radius: 50%;
   box-shadow: 0 5px 6px #0000006e
@@ -783,4 +813,52 @@ footer a {
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.about {
+  background-image: url(../img/circle.svg);
+  background-repeat: no-repeat;
+  background-position:right;
+  background-size: 14%;
+
+}
+
+
+img.imgexp{
+  width: 162px;
+}
+
+.verticallogo{
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -80px;
+}
+.rightSide{
+  z-index: 2;
+}
+
+.rightSide p,.rightSide a{
+  font-size: 1.2rem;
+}
+.contactinfo{
+  text-align: center;
+}
+
+.address{
+  font-weight: 400;
+  margin-top: 24px;
+  margin-left: 18px;
+}
+
+.rightSide i{
+  font-size: 1.5rem;
+}
+
+.rightSide a{
+  transition: all 0.4s;
+}
+
+.rightSide a:hover{
+  color: rgb(230, 224, 224);
 }
