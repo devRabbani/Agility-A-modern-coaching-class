@@ -71,7 +71,7 @@ img {
   padding-top: 180px;
 }
 
-.s1::after {
+/* .s1::after {
   content: "";
   width: 50px;
   height: 3%;
@@ -81,7 +81,82 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(/img/cursor1.svg);
+} */
+
+.cursor {
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  bottom: -315px;
+  left: 48%;
+  animation-name: shake;
+  animation-duration: 0.6s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
 }
+
+  /* @keyframes shake {
+  0%, 100% {
+  transform:translateY(0)
+  }
+  10%, 30%, 50%, 70%, 90% {
+  transform: translateY(-5px)
+  }
+  20%, 40%, 60%, 80% {
+  transform: translateY(5px)
+  }
+  }  */
+
+  @keyframes shake {
+    0%,100% {
+    transform:translateY(0)
+    }
+    25%{
+    transform: translateY(-5px)
+    }
+    75% {
+    transform: translateY(5px)
+    }
+    } 
+
+
+
+    [data-aos] {
+      visibility: hidden;
+    
+        pointer-events: all;
+    }
+    [data-aos].animated {
+      visibility: visible;
+    }
+
+
+ [data-aos].d1{
+   animation-delay: .3s;
+ }
+ [data-aos].d2{
+  animation-delay: .6s;
+}
+[data-aos].d3{
+  animation-delay: 1.2s;
+}
+
+[data-aos].d5{
+  animation-delay: 1s;
+}
+[data-aos].d4{
+  animation-delay: 1.5s;
+}
+[data-aos].d7{
+  animation-delay: .5s;
+}
+
+
+
+  
+
 
 .st::after {
   content: "";
@@ -133,6 +208,8 @@ img {
 
 .image {
   z-index: 2;
+  transform: scale(0.1);
+  transition: all 1.4s;
 }
 
 /* navigation bar */
@@ -385,7 +462,7 @@ h2::after {
 }
 
 .staff:hover {
-  height: 305px
+  height: 310px
 }
 
 .projectdes {
@@ -460,6 +537,7 @@ h2::after {
 .projectFlex {
   display: flex;
   justify-content: space-evenly;
+  margin-top: -15px;
 }
 
 .projectFlex a {
@@ -861,4 +939,241 @@ img.imgexp{
 
 .rightSide a:hover{
   color: rgb(230, 224, 224);
+}
+
+
+
+/* animation */
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@media print, (prefers-reduced-motion: reduce) {
+  .animated {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .animated[class*='Out'] {
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes backInLeft {
+  0% {
+    transform: translateX(-2000px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  80% {
+    transform: translateX(0px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.backInLeft {
+  animation-name: backInLeft;
+}
+
+@keyframes backInUp {
+  0% {
+    transform: translateY(1200px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  80% {
+    transform: translateY(0px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.backInUp {
+  animation-name: backInUp;
+}
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+}
+  
+@keyframes joomInUp {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.joomInUp {
+  animation-name: joomInUp;
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.rotateIn {
+  animation-name: rotateIn;
+  transform-origin: center;
 }

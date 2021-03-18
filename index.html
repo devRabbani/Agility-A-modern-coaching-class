@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
- <link
-    href=https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css rel=stylesheet>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href=https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css rel=stylesheet>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/index.css" />
   <title>Agility - Coaching Classes</title>
 </head>
+
 <body>
   <section class="s1">
     <div class="nav">
       <div class="wrapper navallign">
-        <a href="/" class="logo animate__animated animate__bounceIn"><img src="img/logo.svg" alt=""></a>
+        <a href="/" class="logo"><img src="img/logo.svg" alt="Agility's logo"></a>
         <div class="list">
           <ul id="myMenu">
             <li><a href="#about">About</a></li>
             <li data-menuanchor="secondPage">
               <a href="#vision">Vision</a>
             </li>
-            <li data-menuanchor="thirdPage">
-              <a href="#contact">Contact</a>
-            </li>
             <li data-menuanchor="fourthPage">
               <a href="#staff">Team</a>
+            </li>
+            <li data-menuanchor="thirdPage">
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -36,53 +37,56 @@
     </div>
     <div class="st wrapper">
       <div class="left">
-        <h3>Agility Coaching <br />Classes</h3>
-        <p>
-          Boost your study to the next level with us, Your Future is our
-          future.
-        </p>
-        <div class="btngroup">
-          <a class="btn-contact" href="#">Contact Us</a>
-          <a class="btn-mission" href="#">Mission</a>
+        <div class="animated fadeInDown">
+          <h3>Agility Coaching <br />Classes</h3>
+          <p>
+            Boost your study to the next level with us, Your Future is our
+            future.
+          </p>
         </div>
-        
+
+        <div class="btngroup">
+          <a class="btn-contact animated fadeInLeft d5" href="#contact">Contact Us</a>
+          <a class="btn-mission animated fadeInRight d5" href="#vision">Mission</a>
+        </div>
+        <img class="cursor" src="./img/cursor1.svg" alt="Cursor logo" />
       </div>
       <div class="image">
-        <img src="./img/homeBg.svg" alt="" />
+        <img src="./img/homeBg.svg" alt="Home Background" />
       </div>
     </div>
   </section>
   <section class="features">
     <div class="wrapper">
-      <h2 class="center">Features</h2>
+      <h2 data-aos=bounceInLeft class="center">Features</h2>
       <div class="section">
         <ul>
-          <li>
-            <img class="imgexp" src="img/cuttingedge.svg" alt="photo" />
+          <li data-aos="joomInUp" class="d1">
+            <img class="imgexp" src="img/cuttingedge.svg" alt="Cuttingedge SVG" />
             <h4>Cutting-Edge</h4>
             <p>
               Cutting-edge technology is used to teach students in this modern education system.
             </p>
           </li>
-          <li>
-            <img src="img/engineer.svg" alt="photo" />
+          <li data-aos="joomInUp" class="d2">
+            <img src="img/engineer.svg" alt="Technical SVG" />
             <h4>Technical Background</h4>
             <p>
               All teaching staff from agility are having bachelor degree in engineering.
             </p>
           </li>
-          <li>
-            <img class="imgexp" src="img/rocket.svg" alt="photo" />
+          <li data-aos=joomInUp class="d3">
+            <img class="imgexp" src="img/rocket.svg" alt="Practical SVG" />
             <h4>Practical Knowledge</h4>
             <p>
-              Agility gives theoretical as well as excellent practical knowledge for the future. 
+              Agility gives theoretical as well as excellent practical knowledge for the future.
             </p>
           </li>
-          <li>
-            <img src="img/cmbarier.svg" alt="photo" />
+          <li data-aos=joomInUp class="d4">
+            <img src="img/cmbarier.svg" alt="Communication SVG" />
             <h4>Communication Barrier</h4>
             <p>
-              Faculty are friendly and open-minded to students for better understanding them. 
+              Faculty are friendly and open-minded to students for better understanding them.
             </p>
           </li>
         </ul>
@@ -92,13 +96,15 @@
   <section id="about" class="about">
     <div class="wrapper">
       <div class="aboutContent">
-        <div class="aboutLeft">
-          <img src="img/about.svg" alt="" />
+        <div data-aos="backInLeft" class="aboutLeft">
+          <img src="img/about.svg" alt="About SVG" />
         </div>
         <div class="aboutPara">
-          <h2>About Us</h2>
-          <p class="contPara">
-            Agility Coaching Classes is a modern coaching institute that used cutting-edge technology to provide theoretical and practical knowledge to the students. We have technical background faculty willing to help the students by sharing our technical expertise and career guidance.
+          <h2 data-aos="fadeInDown" class="d7">About Us</h2>
+          <p data-aos=fadeInUp class="contPara d7">
+            Agility Coaching Classes is a modern coaching institute that used cutting-edge technology to provide
+            theoretical and practical knowledge to the students. We have technical background faculty willing to help
+            the students by sharing our technical expertise and career guidance.
           </p>
         </div>
       </div>
@@ -108,103 +114,110 @@
     <div class="wrapper">
       <div class="visionContent">
         <div class="visionLeft">
-          <h2 class="center">Our Vision</h2>
-          <p class="contPara">
-            We aim to provide every student quality-based knowledge to deal with both subjective and objective approaches to every problem and apply their knowledge in practical situations. Moreover, our vision is to empower students to acquire, demonstrate, articulate and value knowledge and skills to support them, as life-long learners, to participate in and contribute to the global world.
+          <h2 data-aos=fadeInDown class="center">Our Vision</h2>
+          <p data-aos=fadeInUp class="contPara">
+            We aim to provide every student quality-based knowledge to deal with both subjective and objective
+            approaches to every problem and apply their knowledge in practical situations. Moreover, our vision is to
+            empower students to acquire, demonstrate, articulate and value knowledge and skills to support them, as
+            life-long learners, to participate in and contribute to the global world.
           </p>
         </div>
-        <div class="visionRight">
-          <img src="img/vision.svg" alt="" />
+        <div data-aos="rotateIn" class="visionRight d4">
+          <img src="img/vision.svg" alt="Vision SVG" />
         </div>
       </div>
     </div>
   </section>
   <section id="staff" class="staffBack">
     <div class="staffSection">
-        <div class="staffContent">
-          <h2 class="center">Staffs</h2>
-          <div class="staffArea">
-            <div class="staff">
-              <div class="projectimg"> <img src="img/mehdee.jpeg" alt="Snewz Site">
-                <h3 class="center staffName">Mehdee Rahman</h3>
-                <p class="center staffSub">Physics</p>
-                <div class="center showbar">HOVER</div>
-              </div>
-              <div class="projectdes">
-                <div class="projectFlex">
-                  <div> <a rel=noreferrer class=facebook target=_blank href=https://www.facebook.com/iammehdee> <i
-                      class=ion-logo-facebook></i> </a></div>
-                  <div> <a rel=noreferrer class=gmail target=_blank href=mailto:immehdee006@gmail.com> <i
-                      class="ion-md-mail"></i> </a>
-                  </div>
-                  <div> <a rel=noreferrer class=linkedin target=_blank href=https://www.linkedin.com/in/nur-mehdee-rahman-640649176> <i
-                      class=ion-logo-linkedin></i> </a></div>
-                  <div> <a rel=noreferrer class=instagram target=_blank href=https://www.instagram.com/imemehdee> <i
-                      class=ion-logo-instagram></i> </a></div>
-                </div>
-                <p class="center staffEdu">B.E In Mechanical Engineering From<br>Jorhat Engineering College, Assam</p>
-              </div>
+      <div class="staffContent">
+        <h2 data-aos=fadeInDown class="center">Staffs</h2>
+        <div class="staffArea">
+          <div data-aos="backInUp" class="staff d2">
+            <div class="projectimg"> <img src="img/mehdee.jpeg" alt="Mehdee's Photo">
+              <h3 class="center staffName">Nur Mehdee Rahman</h3>
+              <p class="center staffSub">Physics</p>
+              <div class="center showbar">HOVER</div>
             </div>
-            <div class="staff">
-              <div class="projectimg"> <img src="img/habib.jpg" alt="Snewz Site">
-                <h3 class="center staffName">Habib Masum</h3>
-                <p class="center staffSub">MATHEMATICS</p>
-                <div class="center showbar">HOVER</div>
-              </div>
-              <div class="projectdes">
-                <div class="projectFlex">
-                  <div> <a rel=noreferrer class=facebook target=_blank href=https://www.facebook.com/100010858752085> <i
-                      class=ion-logo-facebook></i> </a></div>
-                      <div> <a rel=noreferrer class=gmail target=_blank href=mailto:habibmasum6870@gmail.com> <i
-                        class="ion-md-mail"></i></a>
-                    </div>
-                  <div> <a rel=noreferrer class=instagram target=_blank href=https://www.instagram.com/se_hab_12> <i
-                      class=ion-logo-instagram></i> </a></div>
-                      <div> <a rel=noreferrer class=linkedin target=_blank href=https://www.linkedin.com/in/habib-masum-sheikh-4808061ab> <i
-                        class=ion-logo-linkedin></i> </a></div>
+            <div class="projectdes">
+              <div class="projectFlex">
+                <div> <a rel=noreferrer class=facebook target=_blank href=https://www.facebook.com/iammehdee> <i
+                    class=ion-logo-facebook></i> </a></div>
+                <div> <a rel=noreferrer class=gmail target=_blank href=mailto:immehdee006@gmail.com> <i
+                      class="ion-md-mail"></i> </a>
                 </div>
-                <p class="center staffEdu">B.E In Mechanical Engineering From<br>Jorhat Engineering College, Assam</p>
+                <div> <a rel=noreferrer class=linkedin target=_blank
+                    href=https://www.linkedin.com/in/nur-mehdee-rahman-640649176> <i class=ion-logo-linkedin></i> </a>
+                </div>
+                <div> <a rel=noreferrer class=instagram target=_blank href=https://www.instagram.com/imemehdee> <i
+                    class=ion-logo-instagram></i> </a></div>
               </div>
+              <p class="center staffEdu">B.E In Mechanical Engineering From<br>Jorhat Engineering College, Assam</p>
             </div>
           </div>
-  
+          <div data-aos=backInUp class="staff d3">
+            <div class="projectimg"> <img src="img/habib.jpg" alt="Habib's Photo">
+              <h3 class="center staffName">Habib Masum Sk</h3>
+              <p class="center staffSub">MATHEMATICS</p>
+              <div class="center showbar">HOVER</div>
+            </div>
+            <div class="projectdes">
+              <div class="projectFlex">
+                <div> <a rel=noreferrer class=facebook target=_blank href=https://www.facebook.com/100010858752085> <i
+                    class=ion-logo-facebook></i> </a></div>
+                <div> <a rel=noreferrer class=gmail target=_blank href=mailto:habibmasum6870@gmail.com> <i
+                      class="ion-md-mail"></i></a>
+                </div>
+                <div> <a rel=noreferrer class=instagram target=_blank href=https://www.instagram.com/se_hab_12> <i
+                    class=ion-logo-instagram></i> </a></div>
+                <div> <a rel=noreferrer class=linkedin target=_blank
+                    href=https://www.linkedin.com/in/habib-masum-sheikh-4808061ab> <i class=ion-logo-linkedin></i> </a>
+                </div>
+              </div>
+              <p class="center staffEdu">B.E In Electronics and Communication From<br>Barak Valley Engineering College, Assam</p>
+            </div>
+          </div>
         </div>
+
+      </div>
     </div>
   </section>
   <section id="contact" class="contact">
     <div class="wrapper">
-      <h2 class="center">Contact</h2>
+      <h2 data-aos=fadeInDown class="center">Contact</h2>
       <div class="contactWrapper">
-        <div class="leftSide flexDiv">
-         
-            <div class="inner">
-              <form action="">
-                <label class="form-group">
-                  <input type="text" class="form-control"  required>
-                  <span>Your Name</span>
-                  <span class="border"></span>
-                </label>
-                <label class="form-group">
-                  <input type="text" class="form-control"  required>
-                  <span for="">Your Mail</span>
-                  <span class="border"></span>
-                </label>
-                <label class="form-group" >
-                  <textarea name="" id="" class="form-control" required></textarea>
-                  <span for="">Your Message</span>
-                  <span class="border"></span>
-                </label>
-                <button>Submit 
-                  <i class="zmdi zmdi-arrow-right"></i>
-                </button>
-              </form>
-            </div>
+        <div data-aos=bounceInLeft class="leftSide flexDiv">
+
+          <div class="inner">
+            <form name="contact" method="POST" data-netlify="true">
+              <label class="form-group">
+                <input name="FullName" type="text" class="form-control" required>
+                <span>Your Name</span>
+                <span class="border"></span>
+              </label>
+              <label class="form-group">
+                <input name="email" type="text" class="form-control" required>
+                <span for="">Your Mail</span>
+                <span class="border"></span>
+              </label>
+              <label class="form-group">
+                <textarea name="message" id="" class="form-control" required></textarea>
+                <span for="">Your Message</span>
+                <span class="border"></span>
+              </label>
+              <button type="submit">Submit
+                <i class="zmdi zmdi-arrow-right"></i>
+              </button>
+            </form>
           </div>
-        <div class="rightSide flexDiv">
-          <img class=verticallogo src="img/verticallogo.svg" alt="">
-            <p class="contactinfo">Agility offers you a good learning experience with modern technology for firm your Future. Try to contact with us and know more.</p>
-            <p class="address"><em><strong>Address :</strong>  &nbsp;College Road, Dhubri, Assam, 783325</em><br>
-            <a href="mailto:agilitycoachingclasses@gmail.com"> <i class="ion-md-mail"></i> &nbsp;agilitycoachingclasses@gmail.com</a><br>
+        </div>
+        <div data-aos=bounceInRight class="rightSide flexDiv">
+          <img class=verticallogo src="img/verticallogo.svg" alt="Vertical Logo">
+          <p class="contactinfo">Agility offers you a good learning experience with modern technology for firm your
+            Future. Try to contact with us and know more.</p>
+          <p class="address"><em><strong>Address :</strong> &nbsp;College Road, Dhubri, Assam, 783325</em><br>
+            <a href="mailto:agilitycoachingclasses@gmail.com"> <i class="ion-md-mail"></i>
+              &nbsp;agilitycoachingclasses@gmail.com</a><br>
             <a href="tel:8486449305"><i class="ion-md-call"></i> &nbsp;8486449305</a>
           </p>
         </div>
@@ -222,6 +235,22 @@
           </footer> <div class=row>
           <p class=production><strong>&#9679; A GOLAM RABBANI PRODUCTION &#9679;</strong></p>
       </div>
+
+      <script>
+        window.addEventListener('load', () => {
+          document.querySelector('.image').style.transform = 'scale(1)';
+        })
+      </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          useClassNames: true,
+          initClassName: false,
+          animatedClassName: 'animated',
+          offset: 220,
+          once:true
+        });
+      </script>
 </body>
 
 </html>
