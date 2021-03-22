@@ -71,17 +71,6 @@ img {
   padding-top: 180px;
 }
 
-/* .s1::after {
-  content: "";
-  width: 50px;
-  height: 3%;
-  position: absolute;
-  bottom: 30px;
-  left: 48%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(/img/cursor1.svg);
-} */
 
 .cursor {
   width: 50px;
@@ -96,18 +85,6 @@ img {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
 }
-
-  /* @keyframes shake {
-  0%, 100% {
-  transform:translateY(0)
-  }
-  10%, 30%, 50%, 70%, 90% {
-  transform: translateY(-5px)
-  }
-  20%, 40%, 60%, 80% {
-  transform: translateY(5px)
-  }
-  }  */
 
   @keyframes shake {
     0%,100% {
@@ -143,7 +120,7 @@ img {
   animation-delay: 1.2s;
 }
 
-[data-aos].d5{
+[data-aos].d5,.t5{
   animation-delay: 1s;
 }
 [data-aos].d4{
@@ -151,6 +128,10 @@ img {
 }
 [data-aos].d7{
   animation-delay: .5s;
+}
+.t1{
+  animation-delay: 0.3s;
+  animation-duration: 2s;
 }
 
 
@@ -208,8 +189,6 @@ img {
 
 .image {
   z-index: 2;
-  transform: scale(0.1);
-  transition: all 1.4s;
 }
 
 /* navigation bar */
@@ -304,8 +283,10 @@ h2::after {
 }
 
 .aboutLeft {
-  padding: 20px;
+  padding: 19px;
+  border: 2px solid transparent;
   box-shadow: inset 1px 1px 10px black;
+  transition:all 0.4s;
 }
 
 .aboutLeft img {
@@ -414,7 +395,7 @@ h2::after {
   position: absolute;
   background-repeat: no-repeat;
   top: 28%;
-  left: 74.6%;
+  right: 1%;
   opacity: 0.2;
   z-index: 1;
   background-image: url(../img/schoolbooks-monochrome.svg);
@@ -450,7 +431,6 @@ h2::after {
   height: 143px;
   display: flex;
   flex-direction: column;
-  transition: .3s ease-in-out;
   flex-basis: 14%;
   min-width: 220px;
   background-color: #fff;
@@ -624,6 +604,7 @@ h2::after {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 70px 0;
 }
 
@@ -877,7 +858,7 @@ footer a {
   position: absolute;
   background-repeat: no-repeat;
   top: -24%;
-  left:4%;
+  left:61px;
   opacity: 0.6;
   z-index: 1;
   background-image: url(/img/contactUs.svg);
@@ -885,6 +866,7 @@ footer a {
 
 .leftSide{
   z-index: 3;
+  min-width: 490px;
 }
 .staffBack{
   background-image: url(../img/staffbg.svg);
@@ -983,27 +965,6 @@ img.imgexp{
 
 .backInLeft {
   animation-name: backInLeft;
-}
-
-@keyframes backInUp {
-  0% {
-    transform: translateY(1200px) scale(0.7);
-    opacity: 0.7;
-  }
-
-  80% {
-    transform: translateY(0px) scale(0.7);
-    opacity: 0.7;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.backInUp {
-  animation-name: backInUp;
 }
 
 
@@ -1161,6 +1122,21 @@ img.imgexp{
   animation-name: joomInUp;
 }
 
+@keyframes joomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.joomIn {
+  animation-name: joomIn;
+}
+
 @keyframes rotateIn {
   from {
     transform: rotate3d(0, 0, 1, -200deg);
@@ -1177,3 +1153,230 @@ img.imgexp{
   animation-name: rotateIn;
   transform-origin: center;
 }
+
+
+@keyframes flipInY {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInY {
+  backface-visibility: visible !important;
+  animation-name: flipInY;
+}
+
+div.staff{
+  transition: .3s ease-in-out !important   ;
+}
+
+.aboutLeft:hover {
+  box-shadow: none;
+  border: 2px solid black;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1523px) {
+  .visionRight {
+    top: 10%;
+}
+}
+
+
+@media only screen and (max-width: 1410px) {
+  .visionRight {
+    top: 5%;
+}
+.visionContent {
+  padding: 50px 0px 50px 60px;
+ 
+}
+}
+
+@media only screen and (max-width: 1280px) {
+  .visionRight {
+    top: 13%;
+}
+.visionRight img {
+  width: 200px;
+  height: 200px;
+}
+}
+
+@media only screen and (max-width: 1213px) {
+  .visionRight {
+    top: 7%;
+    right: -10%;
+}
+.vision {
+  width: 90%;
+  margin-left: 0%;
+}
+.features .wrapper{
+  width: 100%;
+}
+.features ul li {
+  flex-basis: 180px;
+}
+
+.flexDiv{
+  flex-basis: auto;
+}
+.leftSide{
+  width: 50%;
+}
+.rightSide{
+  width: 34%;
+  margin-left: 20px;
+}
+
+}
+
+@media only screen and (max-width: 1134px) {
+  .visionRight {
+    top: 8%;
+    right: -12%;
+}
+.contPara {
+  line-height: 33px;
+}
+.aboutLeft img {
+  width: 370px;
+}
+.contact::after {
+  top: -26%;
+  left: -59px;
+}
+}
+
+@media only screen and (max-width: 1025px) {
+  .visionRight {
+    top: 10.5%;
+    right: -13%;
+}
+}
+
+
+@media only screen and (max-width: 985px) {
+  .visionRight {
+    top: 13%;
+    right: -13%;
+}
+.aboutContent{
+  padding: 31px;
+}
+.features ul li {
+  flex-basis: 200px;
+  margin: 17px 10px;
+}
+
+.features {
+  background-size: 25%,70%;
+  background-position: top left,123% 333px;
+}
+}
+
+
+@media only screen and (max-width: 950px) {
+  .visionRight {
+    top: 44px;
+    right: 24%;
+}
+html{
+  font-size: 80%;
+}
+.visionLeft{
+  margin-top: 13.5rem;
+  margin-right: 0;
+  text-align: center;
+}
+
+.vision{
+  margin-left: auto;
+  width: 81%;
+  padding-top: 220px;
+}
+
+.visionContent {
+  padding: 50px 20px;
+  position: static;
+}
+.aboutLeft img {
+  width: 345px;
+}
+.staffSub{
+  margin-bottom: 24px;
+}
+.staff:hover {
+  height: 280px;
+}
+
+.features {
+  background-size: 25%,638px;
+  background-position: top left,123% 247px;
+}
+
+.contact::after {
+  top: -29%;
+  left: -121px;
+  transform: scale(1.2);
+}
+
+}
+
+
+@media only screen and (max-width: 885px) {
+  .features .wrapper{
+    width: 95%;
+  }
+}
+
+
+
+@media only screen and (max-width: 885px) {
+
+}
+
+@media only screen and (max-width: 877px) {
+  .verticallogo {
+    margin-top: 55px;
+}
+.rightSide{
+  width: 70%;
+  text-align: center;
+}
+.address {
+  margin-left: 0;
+}
+.contactWrapper{
+  padding-bottom: 40px;
+}
+
+.contact::after {
+  transform: scale(1.2);
+  top: -10%;
+  left: -132px;
+}
+}
+

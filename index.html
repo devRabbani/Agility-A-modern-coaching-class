@@ -22,14 +22,14 @@
         <div class="list">
           <ul id="myMenu">
             <li><a href="#about">About</a></li>
-            <li data-menuanchor="secondPage">
-              <a href="#vision">Vision</a>
-            </li>
-            <li data-menuanchor="fourthPage">
+            <li>
               <a href="#staff">Team</a>
             </li>
-            <li data-menuanchor="thirdPage">
+            <li>
               <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="resource.html">Resource</a>
             </li>
           </ul>
         </div>
@@ -46,12 +46,12 @@
         </div>
 
         <div class="btngroup">
-          <a class="btn-contact animated fadeInLeft d5" href="#contact">Contact Us</a>
-          <a class="btn-mission animated fadeInRight d5" href="#vision">Mission</a>
+          <a class="btn-contact animated fadeInLeft t5" href="#contact">Contact Us</a>
+          <a class="btn-mission animated fadeInRight t5" href="#vision">Mission</a>
         </div>
         <img class="cursor" src="./img/cursor1.svg" alt="Cursor logo" />
       </div>
-      <div class="image">
+      <div class="image animated joomIn t1">
         <img src="./img/homeBg.svg" alt="Home Background" />
       </div>
     </div>
@@ -133,7 +133,7 @@
       <div class="staffContent">
         <h2 data-aos=fadeInDown class="center">Staffs</h2>
         <div class="staffArea">
-          <div data-aos="backInUp" class="staff d2">
+          <div data-aos="flipInY" class="staff d2">
             <div class="projectimg"> <img src="img/mehdee.jpeg" alt="Mehdee's Photo">
               <h3 class="center staffName">Nur Mehdee Rahman</h3>
               <p class="center staffSub">Physics</p>
@@ -155,7 +155,7 @@
               <p class="center staffEdu">B.E In Mechanical Engineering From<br>Jorhat Engineering College, Assam</p>
             </div>
           </div>
-          <div data-aos=backInUp class="staff d3">
+          <div data-aos=flipInY class="staff d3">
             <div class="projectimg"> <img src="img/habib.jpg" alt="Habib's Photo">
               <h3 class="center staffName">Habib Masum Sk</h3>
               <p class="center staffSub">MATHEMATICS</p>
@@ -235,12 +235,6 @@
           </footer> <div class=row>
           <p class=production><strong>&#9679; A GOLAM RABBANI PRODUCTION &#9679;</strong></p>
       </div>
-
-      <script>
-        window.addEventListener('load', () => {
-          document.querySelector('.image').style.transform = 'scale(1)';
-        })
-      </script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         AOS.init({
