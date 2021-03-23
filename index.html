@@ -18,6 +18,9 @@
   <section class="s1">
     <div class="nav">
       <div class="wrapper navallign">
+        <span>
+          <i class=ion-md-menu></i>
+        </span>
         <a href="/" class="logo"><img src="img/logo.svg" alt="Agility's logo"></a>
         <div class="list">
           <ul id="myMenu">
@@ -129,7 +132,7 @@
     </div>
   </section>
   <section id="staff" class="staffBack">
-    <div class="staffSection">
+    <div class="staffSection wrapper">
       <div class="staffContent">
         <h2 data-aos=fadeInDown class="center">Staffs</h2>
         <div class="staffArea">
@@ -244,6 +247,14 @@
           offset: 220,
           once:true
         });
+        document.querySelector(".nav span").addEventListener('click',()=>{
+          document.querySelector("#myMenu").classList.toggle('slide');
+        })
+        document.querySelectorAll('.nav li a').forEach(e=>{
+          e.addEventListener('click',()=>{
+          document.querySelector("#myMenu").classList.toggle('slide');
+        })
+        })
       </script>
 </body>
 
