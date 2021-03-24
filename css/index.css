@@ -1483,6 +1483,12 @@ div.staff {
   .staff:nth-child(2) {
     margin-bottom: 30px;
   }
+
+  .staffBack {
+    background-position: top left;
+    background-size: 1500px;
+  }
+
 }
 
 
@@ -1508,9 +1514,10 @@ div.staff {
     display: flex;
     justify-content: center;
   }
+
   .about {
     background-size: 191px;
-}
+  }
 
 }
 
@@ -1575,9 +1582,11 @@ div.staff {
     width: 100%;
     font-size: 1.4rem;
   }
-.logo{
-  height: 55px;
-}
+
+  .logo {
+    height: 55px;
+  }
+
   .logo img {
     height: 54px;
   }
@@ -1594,23 +1603,112 @@ div.staff {
 
 
 @media only screen and (max-width:790px) {
-.st{
-  flex-direction: column-reverse;
-  padding-top: 100px;
-}
-.wrapper{
-  width: 95%;
-}
-.left {
-  width: 90%;
-  text-align: center;
-}
-.left p {
-  width: 70%;
-  font-size: 1.4rem;
-  margin: 10px auto;
+  .st {
+    flex-direction: column-reverse;
+    padding-top: 100px;
+  }
 
-  display: block;
-  
+  .wrapper {
+    width: 95%;
+  }
+
+  .left {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 126px;
+    margin-top: 50px;
+  }
+
+  .cursor {
+    bottom: -359px;
+  }
+
+  .left p {
+    width: 65%;
+    font-size: 1.4rem;
+    margin: 10px auto;
+    display: block;
+  }
+
+
+  .st::before {
+    height: 23%;
+  }
+
+  .st::after {
+    background-image: url("/img/hemicircle.svg");
+  }
+
+  .st::after {
+    height: 24%;
+    min-height: 100px;
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    background-image: url(/img/hemicircle.svg);
+    transform: scale(-1);
+  }
+
+
+  .s1 {
+    height: 100%;
+  }
+
+  .features {
+    background-size: 25%, 520px;
+    background-position: top left, 140% 366px;
+  }
 }
+
+@media only screen and (max-width:650px) {
+
+  .staffBack {
+    padding: 4%;
+  }
+
+  .staffSection {
+    padding: 45px;
+    width: 100%;
+  }
+  .st::after{
+    right: -4px;
+  }
+}
+
+
+@media only screen and (max-width:560px) {
+
+  .vision {
+    width: 96%;
+  }
+
+  .aboutContent {
+    width: 86%;
+  }
+
+  .leftSide {
+    min-width: 250px;
+    width: 90%;
+  }
+
+
+}
+
+
+@media only screen and (max-width:525px) {
+  .features {
+    background-size: 37%, 520px;
+    background-position: -1px 131px, 17px 727px;
+  }
+
+  .staffBack {
+    background-size: 1300px;
+  }
+
+}
+
+
+@media only screen and (max-width:525px) {
+
+
 }
