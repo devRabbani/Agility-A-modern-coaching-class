@@ -1590,11 +1590,9 @@ div.staff {
 
   .logo {
     height: 55px;
+    line-height: 90px;
   }
 
-  .logo img {
-    height: 54px;
-  }
 
   .nav li a:hover {
     background: #b6b6b9;
@@ -1714,7 +1712,7 @@ div.staff {
   }
 
   [data-aos].d1,[data-aos].d2,[data-aos].d3,[data-aos].d4,[data-aos].d7{
-    animation-delay: .4 s;
+    animation-delay: .4s;
   }
   [data-aos].s3{
     animation-delay: .6s;
@@ -1729,6 +1727,12 @@ div.staff {
   .staffContent::before {
     width: 90%;
     left: 0%;
+}
+.logo img{
+  width: 115px;
+}
+.logo {
+  line-height: 87px;
 }
 .staffContent::after {
   width: 270px;
