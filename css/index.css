@@ -1,11 +1,15 @@
-html {
+html,body {
   scroll-behavior: smooth;
-}
-
-body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .center {
@@ -121,20 +125,22 @@ img {
   animation-delay: .3s;
 }
 
-[data-aos].d2 {
+[data-aos].d2 ,[data-aos].s2{
   animation-delay: .6s;
 }
 
-[data-aos].d3 {
+[data-aos].d3,[data-aos].s3 {
   animation-delay: 1.2s;
 }
 
-[data-aos].d5,
-.t5 {
+[data-aos].v4{
+  animation-delay: 1.2s;
+}
+.t5{
   animation-delay: 1s;
 }
 
-[data-aos].d4 {
+[data-aos].d4{
   animation-delay: 1.5s;
 }
 
@@ -378,7 +384,6 @@ h2::after {
   right: -17%;
   background-color: cornsilk;
   border-radius: 50%;
-  shape-outside: circle();
 }
 
 .visionLeft {
@@ -688,7 +693,7 @@ textarea {
 }
 
 .form-group span {
-  font-size: 15px;
+  font-size: 0.94rem;
   color: #fcf9f9;
   position: absolute;
   top: 11px;
@@ -715,7 +720,7 @@ textarea {
   display: block;
   width: 100%;
   height: 43px;
-  font-size: 15px;
+  font-size: 0.94rem;
   background: none;
 }
 
@@ -1344,7 +1349,7 @@ div.staff {
   .staff img {
     width: 135px;
     height: 135px;
-    left: 23px;
+    left: 21px;
   }
 
   .st {
@@ -1356,8 +1361,6 @@ div.staff {
   .image img {
     width: 428px;
   }
-
-
 }
 
 
@@ -1393,16 +1396,21 @@ div.staff {
 
 @media only screen and (max-width: 950px) {
   .visionRight {
-    top: 44px;
-    right: 24%;
-  }
+    position: initial;
+    margin-top: -235px;
+}
+
+.visionContent {
+  padding: 50px 20px 35px;
+  flex-direction: column-reverse;
+}
 
   html {
     font-size: 80%;
   }
 
   .visionLeft {
-    margin-top: 13.5rem;
+    margin-top: 2rem;
     margin-right: 0;
     text-align: center;
   }
@@ -1413,10 +1421,6 @@ div.staff {
     padding-top: 220px;
   }
 
-  .visionContent {
-    padding: 50px 20px;
-    position: static;
-  }
 
   .aboutLeft img {
     width: 345px;
@@ -1482,6 +1486,7 @@ div.staff {
 
   .staff:nth-child(2) {
     margin-bottom: 30px;
+    margin-top: 55px;
   }
 
   .staffBack {
@@ -1554,8 +1559,8 @@ div.staff {
     width: 100%;
     height: 100vh;
     background-color: #2c3e50;
-    top: 46px;
-    right: -110%;
+    top: 42px;
+    right: -111%;
     text-align: center;
     transition: all .5s;
     z-index: 9999;
@@ -1673,6 +1678,9 @@ div.staff {
   .st::after{
     right: -4px;
   }
+  .visionRight {
+    padding: 70px;
+}
 }
 
 
@@ -1705,10 +1713,251 @@ div.staff {
     background-size: 1300px;
   }
 
+  [data-aos].d1,[data-aos].d2,[data-aos].d3,[data-aos].d4,[data-aos].d7{
+    animation-delay: .4 s;
+  }
+  [data-aos].s3{
+    animation-delay: .6s;
+  } 
+  [data-aos].v4{
+    animation-delay: 1.5s;
+  }
+}              
+
+
+@media only screen and (max-width:480px) {
+  .staffContent::before {
+    width: 90%;
+    left: 0%;
+}
+.staffContent::after {
+  width: 270px;
+}
+.nav span{
+  right: 5%;
+}
+
+.inner {
+  padding: 55px 40px 40px;
+}
+
+.staff {
+  margin-top: 30px;
+}
+
+.staffSection {
+  padding: 20px;
+  width: 100%;
+}
+
+.cursor {
+  left: 44%;
+}
+.staffBack {
+  padding: 5% 3%;
+}
+
+.aboutContent {
+  margin: 0 auto;
+  width: auto;
+}
+
+.features ul li {
+  flex-basis: 60%;
+  padding: 9%;
+  margin: 20px 10px;
+  border-radius: 15px;
+}
+.features img {
+  width: 170px;
+}
+img.imgexp {
+  width: 200px;
+}
+
+.features {
+  background-size: 200px, 450px;
+  background-position: -1px 64px, 62px 1310px;
+}
+
+.projectFlex a {
+  font-size: 1.9rem;
+  margin: 0px 12px;
+}
+
 }
 
 
-@media only screen and (max-width:525px) {
+@media only screen and (max-width:460px) {
 
+  .vision .contPara {
+    line-height: 32px;
+    margin-bottom: 0;
+}
+.visionContent {
+  padding: 50px 30px;
+  position: static;
+}
+.features {
+  background-size: 200px, 450px;
+  background-position: -1px 64px, 0 1310px;
+}
+.vision{
+  width: auto;
+}
+.visionRight {
+  padding: 60px;
+  margin-top: -200px;
+}
+.visionRight img {
+  width: 180px;
+  height: 180px;
+}
+
+
+.aboutLeft img {
+  width: 270px;
+}
+.leftSide {
+  width: 97%;
+}
+.rightSide {
+  width: 85%;
+}
+
+.contact::after {
+  transform: scale(1);
+  top: -16%;
+  left: -146px;
+  width: 452px;
+}
+
+}
+
+@media only screen and (max-width:419px) {
+  .image img {
+    width: 295px;
+}
+
+.left {
+  margin-bottom: 110px;
+  margin-top: 26px;
+  width: auto;
+}
+.cursor {
+  bottom: -305px;
+}
+.left p {
+  width: 80%;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.features li h4{
+    font-size: 1.4rem;
+    margin: 15px auto 10px;
+}
+
+.features li p{
+  font-size: 1.15rem;
+}
+
+.features {
+  background-position: -1px 64px, 46% 103%;
+}
+
+.btn-contact {
+  padding: 12px 22px;
+}
+.vision .contPara {
+  word-spacing: inherit;
+}
+
+
+.st {
+  padding-top: 85px;
+}
+
+.inner{
+  padding: 40px 35px;
+}
+
+.production {
+  word-spacing: 0px;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+}
+footer {
+  height: 37px;
+  font-size: 80%;
+}
+
+}
+
+
+
+@media only screen and (max-width:330px) {
+
+  .image img {
+    width: 245px;
+}
+.st h3 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.left p {
+  width: 90%;
+  font-size: 1.3rem;
+}
+
+.features img {
+  width: 200px;
+}
+.cursor {
+  width: 40px;
+  bottom: -276px;
+  left: 43%;
+}
+.nav ul{
+  right: -112%;
+}
+.about {
+  padding: 50px 0px;
+}
+.aboutLeft img {
+  width: 213px;
+}
+
+.contPara {
+  line-height: 30px;
+  word-spacing: 0;
+}
+
+.aboutContent {
+  padding: 17px;
+}
+
+.vision {
+  padding-left:  0;
+  padding-right: 0;
+  padding-bottom: 40px;
+}
+.staffBack {
+  padding: 0;
+}
+.staffSection {
+  padding: 10px;
+}
+.staffContent::after ,.staffContent::before {
+  width: 249px;
+}
+
+.visionRight img {
+  width: 160px;
+  height: 160px;
+}
 
 }
