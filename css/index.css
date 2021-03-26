@@ -3,6 +3,7 @@ html,body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -12,6 +13,20 @@ html,body {
   user-select: none;
 }
 
+.loader{
+  background-color: #bc73ce;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img{
+  width:220px;
+}
 .center {
   text-align: center;
 }
@@ -46,6 +61,7 @@ h1 {
   background-size: cover;
   height: 100vh;
   min-height: 675px;
+  max-height: 730px;
   position: relative;
 }
 
@@ -365,7 +381,7 @@ h2::after {
 .vision::before {
   content: "";
   background-image: linear-gradient(rgb(0, 0, 0), rgba(14, 1, 1, 0.575)),
-    url(../img/visionBg.jpg);
+    url(../img/visionBg.webp);
   opacity: 0.8;
   background-size: cover;
   width: 100vw;
@@ -1027,6 +1043,10 @@ img.imgexp {
   animation-name: fadeInDown;
 }
 
+.animatedWait{
+  animation-play-state: paused !important;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1655,15 +1675,25 @@ div.staff {
 
   .s1 {
     height: 100%;
+    max-height: none;
   }
 
   .features {
     background-size: 25%, 520px;
     background-position: top left, 140% 366px;
   }
+
+  .inner {
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 47%);
+}
 }
 
 @media only screen and (max-width:650px) {
+
+
+  .left .fadeInDown{
+    animation-name: fadeInUp;
+  }
 
   .staffBack {
     padding: 4%;
@@ -1720,25 +1750,48 @@ div.staff {
   [data-aos].v4{
     animation-delay: 1.5s;
   }
+  .loader img{
+    width: 155px;
+  }
+.s1{
+  background-color: #8c40c4;
+}
+.nav{
+  background-color: #993fd8;
+}
+.contact{
+  background-color: #8c40c4;
+}
+
+.inner{
+  background-color: #902ed8;
+}
+
+.vision::before {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(14, 1, 1, 0.575)),
+    url(../img/smallVisionBg.webp);
+}
 }              
 
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:482px) {
   .staffContent::before {
     width: 90%;
     left: 0%;
 }
 .logo img{
-  width: 115px;
+  width: 125px;
 }
 .logo {
-  line-height: 87px;
+  line-height: 90px;
+  margin-left: 2px;
 }
 .staffContent::after {
   width: 270px;
 }
 .nav span{
   right: 5%;
+  top: 3px;
 }
 
 .inner {

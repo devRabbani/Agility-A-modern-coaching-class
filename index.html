@@ -9,19 +9,23 @@
   <link href=https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css rel=stylesheet>
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="preload" as="image" href="img/Ripple.svg">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/index.css" />
   <title>Agility - Coaching Classes</title>
 </head>
 
 <body>
+  <div class="loader">
+    <img src="/img/Ripple.svg" alt="">
+  </div>
   <section class="s1">
     <div class="nav">
       <div class="wrapper navallign">
         <span>
           <i class=ion-md-menu></i>
         </span>
-        <a href="/" class="logo"><img src="img/logo.png" alt="Agility's logo"></a>
+        <a href="/" class="logo"><img src="img/logo.webp" alt="Agility's logo"></a>
         <div class="list">
           <ul id="myMenu">
             <li><a href="#about">About</a></li>
@@ -40,7 +44,7 @@
     </div>
     <div class="st wrapper">
       <div class="left">
-        <div class="animated fadeInDown">
+        <div class="animated animatedWait fadeInDown">
           <h3>Agility Coaching <br />Classes</h3>
           <p>
             Boost your study to the next level with us, Your Future is our
@@ -49,12 +53,12 @@
         </div>
 
         <div class="btngroup">
-          <a class="btn-contact animated fadeInLeft t5" href="#contact">Contact Us</a>
-          <a class="btn-mission animated fadeInRight t5" href="#vision">Mission</a>
+          <a class="btn-contact animated animatedWait fadeInLeft t5" href="#contact">Contact Us</a>
+          <a class="btn-mission animated animatedWait fadeInRight t5" href="#vision">Mission</a>
         </div>
         <img class="cursor" src="./img/cursor1.svg" alt="Cursor logo" />
       </div>
-      <div class="image animated joomIn t1">
+      <div class="image animated animatedWait joomIn t1">
         <img src="./img/homeBg.svg" alt="Home Background" />
       </div>
     </div>
@@ -137,7 +141,7 @@
         <h2 data-aos=fadeInDown class="center">Staffs</h2>
         <div class="staffArea">
           <div data-aos="flipInY" class="staff s2">
-            <div class="projectimg"> <img src="img/mehdee.jpeg" alt="Mehdee's Photo">
+            <div class="projectimg"> <img src="img/mehdee.webp" alt="Mehdee's Photo">
               <h3 class="center staffName">Nur Mehdee Rahman</h3>
               <p class="center staffSub">Physics</p>
               <div class="center showbar">HOVER</div>
@@ -159,7 +163,7 @@
             </div>
           </div>
           <div data-aos=flipInY class="staff s3">
-            <div class="projectimg"> <img src="img/habib.jpg" alt="Habib's Photo">
+            <div class="projectimg"> <img src="img/habib.webp" alt="Habib's Photo">
               <h3 class="center staffName">Habib Masum Sk</h3>
               <p class="center staffSub">MATHEMATICS</p>
               <div class="center showbar">HOVER</div>
@@ -216,7 +220,7 @@
           </div>
         </div>
         <div data-aos=bounceInRight class="rightSide flexDiv">
-          <img class=verticallogo src="img/verticallogo.png" alt="Vertical Logo">
+          <img class=verticallogo src="img/verticallogo.webp" alt="Vertical Logo">
           <p class="contactinfo">Agility offers you a good learning experience with modern technology for firm your
             Future. Try to contact with us and know more.</p>
           <p class="address"><em><strong>Address :</strong> &nbsp;College Road, Dhubri, Assam, 783325</em><br>
@@ -248,15 +252,8 @@
           offset: 220,
           once: true
         });
-        document.querySelector(".nav span").addEventListener('click', () => {
-          document.querySelector("#myMenu").classList.toggle('slide');
-        })
-        document.querySelectorAll('.nav li a').forEach(e => {
-          e.addEventListener('click', () => {
-            document.querySelector("#myMenu").classList.toggle('slide');
-          })
-        })
-      </script>
+</script>
+<script src="/js/index.js"></script>
 </body>
 
 </html>
